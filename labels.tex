@@ -1,0 +1,207 @@
+\documentclass{article}
+\usepackage[ngerman]{babel}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{shapes.geometric}
+\usepackage{ghsystem}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+\fbox{\parbox[c][1.4cm][t]{5.4cm}{
+    \makebox{
+        \parbox[c][1.4cm][t]{3.5cm}{
+            \colorbox{black}{
+                \parbox{2.8cm}{\textcolor{white}{\small{\textbf{Isopropanol 99,9\%}}}}
+            }
+            \tiny{\\}
+
+            \scriptsize{UN1219}
+
+            \normalsize{\textbf{GEFAHR}}
+
+        }
+        \parbox[c][1.4cm][t]{1.5cm}{
+            \scalebox{.6}{
+                \begin{tikzpicture}
+                    \node (sym1) {\ghspic{flame}};
+                    \begin{scope}
+                %        \clip (.75,-.25) rectangle (1,1);
+                        \pgfset{minimum size=1.5cm,inner sep=0mm}
+                        {
+                            \pgftransformshift{\pgfpoint{.75cm}{-.75cm}}
+                            \pgfnode{diamond}{center}{}{nodename}{\pgfusepath{clip}}
+                        }
+                        \node (sym2) at (sym1.south east) {\ghspic{exclam}};
+                    \end{scope}
+                \end{tikzpicture}
+            }
+        }
+    }
+}}
+
+\fbox{\parbox[c][3.9cm][t]{5.4cm}{
+    \makebox{
+        \parbox[c][1.4cm][t]{3.5cm}{
+            \colorbox{black}{
+                \parbox{2.8cm}{\textcolor{white}{\small{\textbf{Isopropanol 99,9\%}}}}
+            }
+            \tiny{\\}
+
+            \scriptsize{UN1219}
+
+            \normalsize{\textbf{GEFAHR}}
+
+        }
+        \parbox[c][1.4cm][t]{1.5cm}{
+            \scalebox{.6}{
+                \begin{tikzpicture}
+                    \node (sym1) {\ghspic{flame}};
+                    \begin{scope}
+                %        \clip (.75,-.25) rectangle (1,1);
+                        \pgfset{minimum size=1.5cm,inner sep=0mm}
+                        {
+                            \pgftransformshift{\pgfpoint{.75cm}{-.75cm}}
+                            \pgfnode{diamond}{center}{}{nodename}{\pgfusepath{clip}}
+                        }
+                        \node (sym2) at (sym1.south east) {\ghspic{exclam}};
+                    \end{scope}
+                \end{tikzpicture}
+            }
+        }
+    }
+    \par
+    \makebox{
+
+        \parbox[c][2.3cm][t]{5.2cm}{
+            \tiny{
+                \ghs{h}{225} \ghs{h}{319} \ghs{h}{336}
+                \ghs{p}{210} \ghs{p}{280} \ghs{p}{305+351+338}
+                \ghs{p}{301+312} \ghs{p}{243} \ghs{p}{403+233}
+            }
+        }
+    }
+}}
+
+
+\fbox{\parbox[c][1.4cm][t]{5.4cm}{
+    \makebox{
+        \parbox[c][1.4cm][t]{3.5cm}{
+            \colorbox{black}{
+                \parbox{2.8cm}{\textcolor{white}{\small{\textbf{IF 8001}}}}
+            }
+            \tiny{\\}
+
+            \scriptsize{UN1170 - contains carbinol}
+
+            \normalsize{\textbf{GEFAHR}}
+
+        }
+        \parbox[c][1.4cm][t]{1.5cm}{
+            \scalebox{.6}{
+                \begin{tikzpicture}
+                    \node (sym1) {\ghspic{flame}};
+                    \begin{scope}
+                %        \clip (.75,-.25) rectangle (1,1);
+                        \pgfset{minimum size=1.5cm,inner sep=0mm}
+                        {
+                            \pgftransformshift{\pgfpoint{.75cm}{-.75cm}}
+                            \pgfnode{diamond}{center}{}{nodename}{\pgfusepath{clip}}
+                        }
+                        \node (sym2) at (sym1.south east) {\ghspic{health}};
+                    \end{scope}
+                \end{tikzpicture}
+            }
+        }
+    }
+}}
+
+\fbox{\parbox[c][3.9cm][t]{5.4cm}{
+    \makebox{
+        \parbox[c][1.4cm][t]{3.5cm}{
+            \colorbox{black}{
+                \parbox{2.8cm}{\textcolor{white}{\small{\textbf{IF 8001}}}}
+            }
+            \tiny{\\}
+
+            \scriptsize{UN1170 - contains carbinol}
+
+            \normalsize{\textbf{GEFAHR}}
+
+        }
+        \parbox[c][1.4cm][t]{1.5cm}{
+            \scalebox{.6}{
+                \begin{tikzpicture}
+                    \node (sym1) {\ghspic{flame}};
+                    \begin{scope}
+                %        \clip (.75,-.25) rectangle (1,1);
+                        \pgfset{minimum size=1.5cm,inner sep=0mm}
+                        {
+                            \pgftransformshift{\pgfpoint{.75cm}{-.75cm}}
+                            \pgfnode{diamond}{center}{}{nodename}{\pgfusepath{clip}}
+                        }
+                        \node (sym2) at (sym1.south east) {\ghspic{health}};
+                    \end{scope}
+                \end{tikzpicture}
+            }
+        }
+    }
+    \par
+    \makebox{
+
+        \parbox[c][2.3cm][t]{5.2cm}{
+            \tiny{
+                \ghs{h}{225} \ghs{h}{371}
+                \ghs{p}{210} \ghs{p}{260} \ghs{p}{270}
+                \ghs{p}{280} \ghs{p}{403+233}
+            }
+            \vspace{.2cm}
+
+            \scriptsize{Batch No: 80010078 -- Expiry date: 29.03.2017}
+            \vspace{.15cm}
+
+            \tiny{ 
+                Interflux Electronics - Eddastraat 51 -
+                9042 Gent - Belgium \\
+                Tel.: +32 9 251 49 59 
+            }
+        }
+    }
+}}
+
+\fbox{\parbox[c][.8cm][t]{10cm}{
+    \makebox{
+        \parbox[c][.8cm][t]{8cm}{
+            \colorbox{black}{
+                \parbox{2.8cm}{\textcolor{white}{\small{\textbf{IF 8001}}}}
+            }
+            \scriptsize{UN1170 - contains carbinol}
+
+            \vspace{.2cm}
+
+            \tiny{ 
+                Interflux Electronics - Eddastraat 51 -
+                9042 Gent - Belgium - Tel.: +32 9 251 49 59
+            }
+        }
+        \parbox[c][.8cm][t]{2cm}{
+            \scalebox{.6}{
+                \ghspic{flame} \ghspic{health}
+            }
+        }
+    }
+}}
+
+\fbox{\parbox[c][.8cm][t]{10cm}{
+    \makebox{
+        \parbox[c][.8cm][t]{9.8cm}{
+            \tiny{
+                \ghs{h}{225} \ghs{h}{371}
+                \ghs{p}{210} \ghs{p}{260} \ghs{p}{270}
+                \ghs{p}{280} \ghs{p}{403+233}
+            }
+        }
+    }
+}}
+\end{document}
