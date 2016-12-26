@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[ngerman]{babel}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{shapes.geometric}
+\usepackage{ghsystem}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+\fbox{\parbox[c][4cm][t]{8.2cm}{
+    \makebox{
+        \parbox[c][2cm][t]{6.3cm}{
+            \colorbox{black}{
+                \parbox{5.5cm}{\textcolor{white}{\textbf{KLARSP\"ULER}}}
+            }
+            \tiny{\\}
+
+            \normalsize{contains Citric Acid}
+
+            \textbf{ACHTUNG}
+
+        }
+        \parbox[c][2cm][t]{1.5cm}{
+            \begin{tikzpicture}
+                \node (sym1) {\ghspic{exclam}};
+            \end{tikzpicture}
+        }
+    }
+    \par
+    \makebox{
+
+        \parbox[c][2.3cm][t]{8cm}{
+            \small{
+                \ghs{h}{319} \\
+                \ghs{p}{305+351+338}
+            }
+        }
+    }
+}}
+
+\end{document}
